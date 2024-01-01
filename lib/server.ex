@@ -1,6 +1,6 @@
 defmodule Server do
   use GenServer
-  use Using, [:name]
+  use Using, [:name] #exemple __using__ macro and call parameters
 
   def start_link(n, data) do
     name = via_tuple(n)

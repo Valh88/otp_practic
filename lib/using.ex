@@ -16,6 +16,7 @@ defmodule Using do
     end
   end
 
+  @spec get(atom(), any()) :: any()
   def get(module, num) do
     module.callback_get(num)
   end
