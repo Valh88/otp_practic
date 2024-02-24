@@ -18,7 +18,9 @@ defmodule Meta do
     :world
   end
 
-  def callback_get(_num) do
+  def callback_get(num) do
+    exemple_macro(num)
+    IO.inspect(num)
     :callback
   end
 end
